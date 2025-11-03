@@ -1,0 +1,10 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    int *p;
+    p = (int*) calloc(1, sizeof(int));  // allocate & initialize to 0
+    printf("%d\n", *p);                 // print (will be 0)
+    free(p);                            // free memory
+    return 0;
+}
